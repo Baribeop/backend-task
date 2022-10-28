@@ -16,7 +16,7 @@ def user_detail():
         "age" : 35,
         "bio": "I am a Tutor turned Web developer looking for opportunity to build scalable web app "
 
-    })
+    }),200
 if __name__ == "__main__":
     app.run(debug = False)
     

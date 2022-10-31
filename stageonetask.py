@@ -1,4 +1,4 @@
-from flask import Flask, request, render_template, jsonify
+from flask import Flask, request, render_template, jsonify, json
 
 
 
@@ -8,15 +8,14 @@ app = Flask("__name__")
 @app.route("/details", methods=["GET"])
 
 def user_detail():
-    return jsonify
-    ({
-
-        "slackUsername" : "Leele Barry Baribeop",
+    return {"slackUsername" : "Leele Barry Baribeop",
         "backend" : True,
         "age" : 35,
-        "bio": "I am a Tutor turned Web developer looking for opportunity to build scalable web app "
+        "bio": "I am a Tutor turned Web developer looking for opportunity to build scalable web app "}
+    
+    json_str = json.dumps(user_details())
+    print(json_str)
 
-    }),200
 if __name__ == "__main__":
     app.run(debug = False)
     

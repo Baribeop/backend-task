@@ -1,1 +1,1 @@
-web:gunicorn stageonetask: app --log-file -
+web:gunicorn app: app

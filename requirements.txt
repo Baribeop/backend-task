@@ -37,11 +37,7 @@ python-dotenv==0.20.0
 python-editor==1.0.3
 pytz==2019.1
 six==1.10.0
-<<<<<<< HEAD
-SQLAlchemy==1.1.4
-=======
 SQLAlchemy
->>>>>>> f838707c04ffd69155115610b14de6ed1b50453c
 typing_extensions==4.2.0
 virtualenv==20.14.1
 Werkzeug==2.2.2
